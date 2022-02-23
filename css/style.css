@@ -27,6 +27,62 @@ body {
     text-align: center;
     width: 100%;
   }
+/* ANIMATION */
+.navbar-nav {
+    font-family: 'Raleway', Arial, sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 1px;
+  }
+  .navbar-nav * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+  }
+  .navbar-nav li {
+    display: inline-block;
+    list-style: outside none none;
+    margin: 0.5em 1.5em;
+    padding: 0;
+  }
+  .navbar-nav a {
+    padding: 0.3em 0;
+    color: rgba(255, 255, 255, 0.5);
+    position: relative;
+    text-decoration: none;
+    display: inline-block;
+  }
+  .navbar-nav a:before,
+  .navbar-nav a:after {
+    height: 3px;
+    position: absolute;
+    content: '';
+    -webkit-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+    background-color: #fcbe03;
+    width: 0;
+  }
+  .navbar-nav a:before {
+    top: 0;
+    left: 0;
+  }
+  .navbar-nav a:after {
+    bottom: 0;
+    right: 0;
+  }
+  .navbar-nav a:hover,
+  .navbar-nav .current a {
+    color: #ffffff;
+  }
+  .navbar-nav a:hover:before,
+  .navbar-nav .current a:before,
+  .navbar-nav a:hover:after,
+  .navbar-nav .current a:after {
+    width: 100%;
+  }
+  
 /* CUSTOM BOOTSTRAP */
 .navbar-expand-lg .navbar-collapse {
     justify-content: flex-end;
@@ -42,4 +98,7 @@ body {
   .bg-yellow {
     background-color: #fcbe03;
   }
+.nav-item{
+    font-size: 16px;
+}
   
