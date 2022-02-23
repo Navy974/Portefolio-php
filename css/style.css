@@ -1,0 +1,45 @@
+body {
+    font-family: "roboto", sans-serif, "navystudio";
+}
+.text-about{
+    display: flex;
+}
+.text-cv {
+    width: 100px;
+}
+.custom {
+    width: 110px;
+}
+.title h2{
+    margin-top: 4.56rem;
+    color: #b3b3bb;
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+.title hr{
+    margin: 26px auto 52px auto;
+    width: 60px;
+    border-top: 3px solid rgba(212, 212, 212, 1);
+}
+.bg-about {
+    background: #efeff1;
+    border: 1px solid#e6e6ea;
+    text-align: center;
+    width: 100%;
+  }
+/* CUSTOM BOOTSTRAP */
+.navbar-expand-lg .navbar-collapse {
+    justify-content: flex-end;
+}
+.carousel-caption {
+    width: 76%;
+    right: initial;
+    bottom: initial;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .bg-yellow {
+    background-color: #fcbe03;
+  }
+  
