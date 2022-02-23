@@ -45,6 +45,7 @@
   }
   .navy-monitor:before {
     content: "\e906";
+    color: white;
   }
   .navy-list:before {
     content: "\e907";
