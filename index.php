@@ -17,28 +17,28 @@
 <body>
     <!-- NAVBAR debut -->
     <div class="container">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">Navbar</a>
+    <a class="navbar-brand" href="#"></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">A propos de moi</a>
+          <a class="nav-link active" aria-current="page" href="#C1">A propos de moi</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Formation</a>
+          <a class="nav-link" href="#C2">Formation</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Expérience</a>
+          <a class="nav-link" href="#C3">Expérience</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Portefolio</a>
+          <a class="nav-link" href="#C4">Portefolio</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Contact</a>
+          <a class="nav-link" href="#C5">Contact</a>
         </li>
         <li class="nav-item">
           <a class="nav-link disabled">Disabled</a>
@@ -102,7 +102,7 @@
 <!-- CONTENU -->
 <div class="container">
     <div class="row title">
-        <h2 class="text-center">A Propos de moi</h2>
+        <h2 class="text-center" id="C1">A Propos de moi</h2>
         <hr>
         <p class="text-center w-100 px-5 text-about">Salut et Bienvenue sur mon portfolio, je suis Yvan passionné des technologies, du monde de la photographie et du cinéma. 
 Voilà depuis plus de 4 ans que je réalise des shootings photo ainsi que des clips et reportages vidéo.
@@ -144,7 +144,7 @@ Bonne visite à tous! </p>
     <!-- FIN BLOC -->
     <!-- FORMATION -->
     <div class="row title">
-        <h2 class="text-center">Formation</h2>
+        <h2 class="text-center" id="C2">Formation</h2>
         <hr>
     </div>
     <!-- BLOC FORMATION -->
@@ -152,14 +152,14 @@ Bonne visite à tous! </p>
     <div class="col-12 col-lg-4 d-flex ">
                     <div class="bg-about">
                         <i class="fa" aria-hidden="true"></i>
-                        <h4>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo aspernatur iusto quod mollitia ipsum asperiores, neque totam beatae fuga laudantium! Reiciendis debitis impedit eligendi qui nisi nostrum, alias consectetur quod.</h4>
+                        <h4>2020-2021 Titre RNCP Développeur web et mobile</h4>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum dolor eum corporis asperiores voluptatum cumque. Doloremque quis accusantium alias. Obcaecati, quas tempore! Quibusdam officia animi vel eum hic at doloremque?</p>
                     </div>
         </div>
     <div class="col-12 col-lg-4 d-flex ">
                     <div class="bg-about">
                         <i class="fa" aria-hidden="true"></i>
-                        <h4>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo aspernatur iusto quod mollitia ipsum asperiores, neque totam beatae fuga laudantium! Reiciendis debitis impedit eligendi qui nisi nostrum, alias consectetur quod.</h4>
+                        <h4>2004-2006 Bac pro Commerce</h4>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum dolor eum corporis asperiores voluptatum cumque. Doloremque quis accusantium alias. Obcaecati, quas tempore! Quibusdam officia animi vel eum hic at doloremque?</p>
                     </div>
         </div>
@@ -174,7 +174,7 @@ Bonne visite à tous! </p>
     <!-- FIN BLOC FORMATION -->
 <!-- PORTFOLIO -->
 <div class="row title" id="portfolio">
-            <h2 class="text-center w-100">Portfolio</h2>
+            <h2 class="text-center w-100" id="C4">Portfolio</h2>
             <hr>
             <p class="text-center w-100 px-5">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Ex reiciendis illum voluptas aspernatur fuga praesentium tenetur nam, placeat exercitationem, eos quos est eius, aliquam minima ipsa aut incidunt numquam quo!</p>
@@ -191,11 +191,12 @@ Bonne visite à tous! </p>
                     <img src="source/téléchargement (1).jpeg" alt="<?php echo $bloc["texte"]; ?>" class="photo">
                 </div>
         </div>
+        </div>
         <!-- FIN GALLERY -->
 <!-- FIN PORTFOLIO -->
 <!-- CONTACT -->
 <div class="row title">
-    <h2 class="text-center">Contact</h2>
+    <h2 class="text-center" id="C5">Contact</h2>
     <hr>
     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error reiciendis enim earum? Voluptate dicta aperiam assumenda totam quae earum neque et? Provident distinctio deleniti et esse temporibus excepturi saepe ipsum.</p>
 </div>

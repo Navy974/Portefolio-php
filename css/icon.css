@@ -30,9 +30,13 @@
   }
   .navy-picture:before {
     content: "\e901";
+    color: white;
+    font-size: 60px;
   }
   .navy-camera:before {
     content: "\e902";
+    color: white;
+    font-size: 60px;
   }
   .navy-film:before {
     content: "\e903";
@@ -45,6 +49,8 @@
   }
   .navy-monitor:before {
     content: "\e906";
+    color: white;
+    font-size: 60px;
   }
   .navy-list:before {
     content: "\e907";
@@ -54,4 +60,6 @@
   }
   .navy-camera1:before {
     content: "\e909";
+    color: white;
+    font-size: 60px;
   }
