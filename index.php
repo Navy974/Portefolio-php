@@ -152,14 +152,14 @@ Bonne visite à tous! </p>
     <div class="col-12 col-lg-4 d-flex ">
                     <div class="bg-about">
                         <i class="fa" aria-hidden="true"></i>
-                        <h4>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo aspernatur iusto quod mollitia ipsum asperiores, neque totam beatae fuga laudantium! Reiciendis debitis impedit eligendi qui nisi nostrum, alias consectetur quod.</h4>
+                        <h4>2020-2021 Titre RNCP Développeur web et mobile</h4>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum dolor eum corporis asperiores voluptatum cumque. Doloremque quis accusantium alias. Obcaecati, quas tempore! Quibusdam officia animi vel eum hic at doloremque?</p>
                     </div>
         </div>
     <div class="col-12 col-lg-4 d-flex ">
                     <div class="bg-about">
                         <i class="fa" aria-hidden="true"></i>
-                        <h4>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo aspernatur iusto quod mollitia ipsum asperiores, neque totam beatae fuga laudantium! Reiciendis debitis impedit eligendi qui nisi nostrum, alias consectetur quod.</h4>
+                        <h4>2004-2006 Bac pro Commerce</h4>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum dolor eum corporis asperiores voluptatum cumque. Doloremque quis accusantium alias. Obcaecati, quas tempore! Quibusdam officia animi vel eum hic at doloremque?</p>
                     </div>
         </div>
@@ -190,6 +190,7 @@ Bonne visite à tous! </p>
         <div class="col-12 col-lg-4 d-flex justify-content-center">
                     <img src="source/téléchargement (1).jpeg" alt="<?php echo $bloc["texte"]; ?>" class="photo">
                 </div>
+        </div>
         </div>
         <!-- FIN GALLERY -->
 <!-- FIN PORTFOLIO -->

@@ -26,7 +26,24 @@ body {
     border: 1px solid#e6e6ea;
     text-align: center;
     width: 100%;
+    margin-top: 40px;
+    padding-top: 35px;
   }
+.bg-about h4 {
+    font-size: 1.25rem;
+    margin-bottom: 24px;
+  }
+.bg-about p {
+    font-size: 0.875rem;
+    color: #848484;
+    font-weight: 300;
+    margin: 0 20px;
+    padding-bottom: 30px;
+}
+.photo {
+  width: 23.75rem;
+  border: solid white 1px;
+}
 /* ANIMATION */
 .navbar-nav {
     font-family: 'Raleway', Arial, sans-serif;
