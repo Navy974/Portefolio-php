@@ -114,28 +114,28 @@ Bonne visite à tous! </p>
         <!-- bloc 1 -->
         <div class="col-12 col-lg-3 d-flex mb-4 mb-lg-0">
                     <div class="bg-about">
-                    <span class="navy-monitor"></span>
+                    <span class="icon-monitor"></span>
                         <h4>Développement Web</h4>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum dolor eum corporis asperiores voluptatum cumque. Doloremque quis accusantium alias. Obcaecati, quas tempore! Quibusdam officia animi vel eum hic at doloremque?</p>
                     </div>
         </div>
         <div class="col-12 col-lg-3 d-flex mb-4 mb-lg-0">
                     <div class="bg-about">
-                        <span class="navy-camera"></span>
+                        <span class="icon-camera"></span>
                         <h4>Photographie</h4>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum dolor eum corporis asperiores voluptatum cumque. Doloremque quis accusantium alias. Obcaecati, quas tempore! Quibusdam officia animi vel eum hic at doloremque?</p>
                     </div>
         </div>
         <div class="col-12 col-lg-3 d-flex mb-4 mb-lg-0">
                     <div class="bg-about">
-                        <span class="navy-camera1"></span>
+                        <span class="icon-video-camera"></span>
                         <h4>Video</h4>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum dolor eum corporis asperiores voluptatum cumque. Doloremque quis accusantium alias. Obcaecati, quas tempore! Quibusdam officia animi vel eum hic at doloremque?</p>
                     </div>
         </div>
         <div class="col-12 col-lg-3 d-flex mb-4 mb-lg-0">
                     <div class="bg-about">
-                        <span class="navy-picture"></span>
+                        <span class="icon-image"></span>
                         <h4>Graphisme</h4>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum dolor eum corporis asperiores voluptatum cumque. Doloremque quis accusantium alias. Obcaecati, quas tempore! Quibusdam officia animi vel eum hic at doloremque?</p>
                     </div>
@@ -198,19 +198,61 @@ Bonne visite à tous! </p>
 <div class="row title">
     <h2 class="text-center" id="C5">Contact</h2>
     <hr>
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error reiciendis enim earum? Voluptate dicta aperiam assumenda totam quae earum neque et? Provident distinctio deleniti et esse temporibus excepturi saepe ipsum.</p>
+    <p class="text-center w-100 px-5">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error reiciendis enim earum? Voluptate dicta aperiam 
+      assumenda totam quae earum neque et? Provident distinctio deleniti et esse temporibus excepturi saepe ipsum.</p>
 </div>
 <div class="row">
-    <div class="col">
-        <h4>TEST</h4>
-        <p>test</p>
+    <div class="col navy-contact">
+      <div class="navy-span">
+        <span class="icon-mail4"></span>
+      </div>
+        <h4>Email</h4>
+        <p>test@gmail.com</p>
+        <div class="navy-span">
+          <span class="icon-phone"></span>
+        </div>
+        <h4>Téléphone</h4>
+        <p>000000000</p>
     </div>
-    <div class="col">
-        <h4>TEST</h4>
-        <p>test</p>
+    <div class="col navy-form">
+    <div class="mb-3">
+  <label for="exampleFormControlInput1" class="form-label">Nom</label>
+  <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Nom">
+</div>
+    <div class="mb-3">
+  <label for="exampleFormControlInput1" class="form-label">Prénom</label>
+  <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Prénom">
+</div>
+    <div class="mb-3">
+  <label for="exampleFormControlInput1" class="form-label">Téléphone</label>
+  <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Tel">
+</div>
+    <div class="mb-3">
+  <label for="exampleFormControlInput1" class="form-label">Email address</label>
+  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+</div>
+<div class="mb-3">
+  <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+</div>
+<a class="btn btn-primary" href="#" role="button">Envoyer</a>
     </div>
 </div>
 <!-- FIN CONTACT -->
+</div>
+<div class="footer-bg">
+  <div class="row">
+    <div class="col">
+      <div class="footer-social">
+        <span class="icon-facebook2"></span>
+        <span class="icon-instagram"></span>
+        <span class="icon-linkedin"></span>
+      </div>
+    </div>
+    <div class="col">
+
+    </div>
+  </div>
 </div>
 <!-- FIN CONTENU -->
 <!-- CDN JS BOOTSTRAP -->

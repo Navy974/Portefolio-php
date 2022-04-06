@@ -40,9 +40,40 @@ body {
     margin: 0 20px;
     padding-bottom: 30px;
 }
+.bg-about span {
+  font-size: 40px;
+  color: #fcbe03;
+}
 .photo {
   width: 23.75rem;
   border: solid white 1px;
+}
+.navy-contact {
+  margin-left: 20px;
+}
+.navy-contact p, h4 {
+  text-align: center;
+}
+.navy-span {
+  text-align: center;
+  font-size: 55px;
+  margin-top: 40px;
+  color: #fcbe03;
+}
+.form-control {
+  width: 90%;
+}
+.navy-form {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.footer-bg {
+  background-color: black;
+}
+.footer-social {
+  font-size: 20px;
+  color: white;
+  margin-left: 40px;
 }
 /* ANIMATION */
 .navbar-nav {
