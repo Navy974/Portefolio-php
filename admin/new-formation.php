@@ -4,16 +4,16 @@
 <?php
     include("./inc/head.inc.php")
     ?>
-    <title>Document</title>
+    <title>Ajout de formation</title>
 </head>
 <body>
 <?php
     include('./inc/header.inc.php')
     ?>
     <div class="container bg-white shadow py-2">
-        <h1>Ajouter un About</h1>
+        <h1>Ajouter une formation</h1>
         <hr>
-        <form action="./core/add-about.php" method="post">
+        <form action="./core/add-formation.php" method="post">
         <div class="from-group">
             <label for="titre">Titre</label>
             <input type="text" name="titre" id="titre" class="form-control">

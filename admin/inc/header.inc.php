@@ -18,6 +18,12 @@
                     <a class="nav-link" href="index-about.php">About</a>
                 </li>
                 <li class="nav-item">
+                    <a class="nav-link" href="index-about-modal.php">Modal</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index-formation.php">Formation</a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link" href="index-user.php">User</a>
                 </li>
                 <li class="nav-item">

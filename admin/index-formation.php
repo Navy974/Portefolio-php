@@ -11,25 +11,20 @@ include("./inc/session.inc.php");
     <?php
     include("./inc/head.inc.php")
     ?>
-    <title>Back-office||About</title>
+    <title>Back-office||Formation</title>
 </head>
-
 <body class="bg-light">
     <?php
     include('./inc/header.inc.php')
     ?>
     <div class="container bg-white shadow">
-        <h1>Gérer les About</h1>
+        <h1>Gérer les Formations</h1>
         <div class="row justify-content-end">
-            <a href="./new-about.php" class="btn btn-primary mr-3 mb-3">Nouveau</a>
+            <a href="./new-formation.php" class="btn btn-primary mr-3 mb-3">Nouveau</a>
         </div>
-        <!-- Prise en charge des messages de session php -->
         <?php 
-        //On vérifie si un message existe dans la session
         if(isset($_SESSION["message"])){
-            //On affiche le message dans une alert Bootsrap
             echo ' <div class="alert alert-success">'.$_SESSION["message"].'</div>';
-            //Et surtout on supprime le message de la session car il a été diffusé
             unset($_SESSION["message"]);
         };
         ?>
@@ -47,7 +42,7 @@ include("./inc/session.inc.php");
                 //1 - Connexion
                 require_once('./core/connexion.php');
                 //2 - Ecriture de la requête
-                $sql = 'SELECT * FROM about';
+                $sql = 'SELECT * FROM formation';
                 //3 - Execution de la requête
                 $req = mysqli_query($connexion, $sql) or die(mysqli_error($connexion));
                 //4 - Traitement des données 
@@ -59,8 +54,8 @@ include("./inc/session.inc.php");
                     <td><?php echo $bloc['texte'];?></td>
                     <td>
                         <div class="d-flex">
-                            <a href="../admin/core/delete-about.php?id=<?php echo $bloc['id'];?>" class="btn btn-danger mr-2" onclick="return confirm ('Vraiment ?')"><i class="fa fa-trash"></i></a>
-                            <a href="edit-about.php?id=<?php echo $bloc['id'];?>" class="btn btn-info"><i class="fa fa-edit"></i></a>
+                            <a href="../admin/core/delete-formation.php?id=<?php echo $bloc['id'];?>" class="btn btn-danger mr-2" onclick="return confirm ('Vraiment ?')"><i class="fa fa-trash"></i></a>
+                            <a href="edit-formation.php?id=<?php echo $bloc['id'];?>" class="btn btn-info"><i class="fa fa-edit"></i></a>
                         </div>
                         
                     </td>

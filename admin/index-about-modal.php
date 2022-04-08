@@ -19,9 +19,9 @@ include("./inc/session.inc.php");
     include('./inc/header.inc.php')
     ?>
     <div class="container bg-white shadow">
-        <h1>Gérer les About</h1>
+        <h1>Gérer les Modales</h1>
         <div class="row justify-content-end">
-            <a href="./new-about.php" class="btn btn-primary mr-3 mb-3">Nouveau</a>
+            <a href="./new-about-modal.php" class="btn btn-primary mr-3 mb-3">Nouveau</a>
         </div>
         <!-- Prise en charge des messages de session php -->
         <?php 
@@ -37,6 +37,7 @@ include("./inc/session.inc.php");
             <thead>
                 <tr>
                     <th scope="col">Id</th>
+                    <th scope="col">Icone</th>
                     <th scope="col">Titre</th>
                     <th scope="col">Texte</th>
                     <th scope="col">Action</th>
@@ -47,7 +48,7 @@ include("./inc/session.inc.php");
                 //1 - Connexion
                 require_once('./core/connexion.php');
                 //2 - Ecriture de la requête
-                $sql = 'SELECT * FROM about';
+                $sql = 'SELECT * FROM about_modal';
                 //3 - Execution de la requête
                 $req = mysqli_query($connexion, $sql) or die(mysqli_error($connexion));
                 //4 - Traitement des données 
@@ -55,12 +56,13 @@ include("./inc/session.inc.php");
                 ?>
                 <tr>
                     <th scope="row"><?php echo $bloc['id'];?></th>
-                    <td><?php echo $bloc['titre'];?></td>
-                    <td><?php echo $bloc['texte'];?></td>
+                    <td><span class="<?php echo $bloc['icone_modal'];?>"></span></td>
+                    <td><?php echo $bloc['titre_modal'];?></td>
+                    <td><?php echo $bloc['texte_modal'];?></td>
                     <td>
                         <div class="d-flex">
-                            <a href="../admin/core/delete-about.php?id=<?php echo $bloc['id'];?>" class="btn btn-danger mr-2" onclick="return confirm ('Vraiment ?')"><i class="fa fa-trash"></i></a>
-                            <a href="edit-about.php?id=<?php echo $bloc['id'];?>" class="btn btn-info"><i class="fa fa-edit"></i></a>
+                            <a href="../admin/core/delete-about-modal.php?id=<?php echo $bloc['id'];?>" class="btn btn-danger mr-2" onclick="return confirm ('Vraiment ?')"><i class="fa fa-trash"></i></a>
+                            <a href="edit-about-modal.php?id=<?php echo $bloc['id'];?>" class="btn btn-info"><i class="fa fa-edit"></i></a>
                         </div>
                         
                     </td>

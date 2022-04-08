@@ -5,11 +5,11 @@ session_start();
 // 1 - Connexion
 require_once('../core/connexion.php');
 // 2 - Ecriture de la requête
-$sql = 'DELETE FROM about WHERE id=' .$_GET['id'];
+$sql = 'DELETE FROM formation WHERE id=' .$_GET['id'];
 // 3 - Execution de la requête 
 mysqli_query($connexion, $sql) or die(mysqli_error($connexion));
 // Mise en place d'un message dans la session à l'aide de $_SESSION (super variable accessible parce qu'il y a eu session start dans la page)
 $_SESSION['message'] = "Suppression correctement effectuée.";
 
 // Redirection vers la liste des abouts
-header('Location: ../index-about.php');
+header('Location: ../index-formation.php');

@@ -4,12 +4,17 @@
 session_start();
 // 1 - Connexion
 require_once('../core/connexion.php');
-// 2 - Ecriture de la requête
-$sql = 'DELETE FROM about WHERE id=' .$_GET['id'];
+// 2- Ecriture de requête 
+// addslashes échappent (\) les guillemets simples ou doubles se trouvent dans le contenu 
+// $_POST est une super (globale) variable qui sert à récupérer les données du formulaire puisque celui-ci est en 
+// méthode POST. Les noms dans les crochets correspondent aux attributs name des inputs du formulaire 
+$titre = addslashes($_POST['titre']);
+$texte = addslashes($_POST['texte']);
+$sql = 'UPDATE about SET titre="'.$titre.'", texte="'.$texte.'" WHERE id='.$_POST["form-id"];
 // 3 - Execution de la requête 
 mysqli_query($connexion, $sql) or die(mysqli_error($connexion));
 // Mise en place d'un message dans la session à l'aide de $_SESSION (super variable accessible parce qu'il y a eu session start dans la page)
-$_SESSION['message'] = "Suppression correctement effectuée.";
+$_SESSION['message'] = "Mise à jour correctement effectuée.";
 
 // Redirection vers la liste des abouts
 header('Location: ../index-about.php');

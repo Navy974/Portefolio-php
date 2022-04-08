@@ -7,12 +7,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Raleway:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
     <!-- CDN Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <!-- CSS Custom -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="./css/icon.css">
-    <title>Portefolio - Yvan Sevanandee</title>
+    <title>Portefolio||Yvan Sevanandee</title>
 </head>
 <body>
     <!-- NAVBAR debut -->
@@ -102,44 +103,37 @@
 <!-- CONTENU -->
 <div class="container">
     <div class="row title">
-        <h2 class="text-center" id="C1">A Propos de moi</h2>
+      <?php
+      require_once('./admin/core/connexion.php');
+      $sql = 'SELECT * FROM about';
+      $req = mysqli_query($connexion, $sql) or die(mysqli_error($connexion));
+      while ($bloc = mysqli_fetch_array($req)) {
+      ?>
+        <h2 class="text-center" id="C1"><?php echo $bloc["titre"] ?></h2>
         <hr>
-        <p class="text-center w-100 px-5 text-about">Salut et Bienvenue sur mon portfolio, je suis Yvan passionné des technologies, du monde de la photographie et du cinéma. 
-Voilà depuis plus de 4 ans que je réalise des shootings photo ainsi que des clips et reportages vidéo.
-Je suis également diplômé d'un titre professionnel RNCP en développement web.
-Ici vous allez découvrir les projets réaliser qui reflète la qualité de mon travail. 
-Bonne visite à tous! </p>
+        <p class="text-center w-100 px-5 text-about"><?php echo $bloc["texte"] ?></p>
+        <?php
+            }
+        ?>
     </div>
     <div class="row">
         <!-- bloc 1 -->
+        <?php
+        require_once('./admin/core/connexion.php');
+        $sql = 'SELECT * FROM about_modal';
+        $req = mysqli_query($connexion, $sql) or die(mysqli_error($connexion));
+        while ($bloc = mysqli_fetch_array($req)) {
+        ?>
         <div class="col-12 col-lg-3 d-flex mb-4 mb-lg-0">
-                    <div class="bg-about">
-                    <span class="icon-monitor"></span>
-                        <h4>Développement Web</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum dolor eum corporis asperiores voluptatum cumque. Doloremque quis accusantium alias. Obcaecati, quas tempore! Quibusdam officia animi vel eum hic at doloremque?</p>
-                    </div>
+                  <div class="bg-about">
+                    <span class="<?php echo $bloc["icone_modal"];?>"></span>
+                    <h4><?php echo $bloc["titre_modal"];?></h4>
+                    <p><?php echo $bloc["texte_modal"];?></p>
+                  </div>
         </div>
-        <div class="col-12 col-lg-3 d-flex mb-4 mb-lg-0">
-                    <div class="bg-about">
-                        <span class="icon-camera"></span>
-                        <h4>Photographie</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum dolor eum corporis asperiores voluptatum cumque. Doloremque quis accusantium alias. Obcaecati, quas tempore! Quibusdam officia animi vel eum hic at doloremque?</p>
-                    </div>
-        </div>
-        <div class="col-12 col-lg-3 d-flex mb-4 mb-lg-0">
-                    <div class="bg-about">
-                        <span class="icon-video-camera"></span>
-                        <h4>Video</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum dolor eum corporis asperiores voluptatum cumque. Doloremque quis accusantium alias. Obcaecati, quas tempore! Quibusdam officia animi vel eum hic at doloremque?</p>
-                    </div>
-        </div>
-        <div class="col-12 col-lg-3 d-flex mb-4 mb-lg-0">
-                    <div class="bg-about">
-                        <span class="icon-image"></span>
-                        <h4>Graphisme</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum dolor eum corporis asperiores voluptatum cumque. Doloremque quis accusantium alias. Obcaecati, quas tempore! Quibusdam officia animi vel eum hic at doloremque?</p>
-                    </div>
-        </div>
+        <?php
+        }
+        ?>
     </div>
     <!-- FIN BLOC -->
     <!-- FORMATION -->
