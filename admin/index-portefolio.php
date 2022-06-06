@@ -11,16 +11,16 @@ include("./inc/session.inc.php");
     <?php
     include("./inc/head.inc.php")
     ?>
-    <title>Back-office||Formation</title>
+    <title>Back-office||Portefolio</title>
 </head>
 <body class="bg-light">
     <?php
     include('./inc/header.inc.php')
     ?>
     <div class="container bg-white shadow">
-        <h1>Gérer les Formations</h1>
+        <h1>Gérer le portefolio</h1>
         <div class="row justify-content-end">
-            <a href="./new-formation.php" class="btn btn-primary mr-3 mb-3">Nouveau</a>
+            <a href="./new-portefolio.php" class="btn btn-primary mr-3 mb-3">Nouveau</a>
         </div>
         <?php 
         if(isset($_SESSION["message"])){
@@ -42,7 +42,7 @@ include("./inc/session.inc.php");
                 //1 - Connexion
                 require_once('./core/connexion.php');
                 //2 - Ecriture de la requête
-                $sql = 'SELECT * FROM formation';
+                $sql = 'SELECT * FROM portefolio';
                 //3 - Execution de la requête
                 $req = mysqli_query($connexion, $sql) or die(mysqli_error($connexion));
                 //4 - Traitement des données 
@@ -54,8 +54,8 @@ include("./inc/session.inc.php");
                     <td><?php echo $bloc['texte'];?></td>
                     <td>
                         <div class="d-flex">
-                            <a href="../admin/core/delete-formation.php?id=<?php echo $bloc['id'];?>" class="btn btn-danger mr-2" onclick="return confirm ('Vraiment ?')"><i class="fa fa-trash"></i></a>
-                            <a href="edit-formation.php?id=<?php echo $bloc['id'];?>" class="btn btn-info"><i class="fa fa-edit"></i></a>
+                            <a href="../admin/core/delete-portefolio.php?id=<?php echo $bloc['id'];?>" class="btn btn-danger mr-2" onclick="return confirm ('Vraiment ?')"><i class="fa fa-trash"></i></a>
+                            <a href="edit-portefolio.php?id=<?php echo $bloc['id'];?>" class="btn btn-info"><i class="fa fa-edit"></i></a>
                         </div>
                         
                     </td>
@@ -67,9 +67,9 @@ include("./inc/session.inc.php");
         </table>
     </div>
     <div class="container bg-white shadow">
-        <h1>Gérer les Modales</h1>
+        <h1>Gérer la gallery</h1>
         <div class="row justify-content-end">
-            <a href="./new-formation-modal.php" class="btn btn-primary mr-3 mb-3">Nouveau</a>
+            <a href="./new-portefolio-gallery.php" class="btn btn-primary mr-3 mb-3">Nouveau</a>
         </div>
         <?php 
         if(isset($_SESSION["message"])){
@@ -81,9 +81,7 @@ include("./inc/session.inc.php");
             <thead>
                 <tr>
                     <th scope="col">Id</th>
-                    <th scope="col">Titre</th>
-                    <th scope="col">Texte</th>
-                    <th scope="col">Icone</th>
+                    <th scope="col">Photo</th>
                     <th scope="col">Action</th>
                 </tr>
             </thead>
@@ -92,7 +90,7 @@ include("./inc/session.inc.php");
                 //1 - Connexion
                 require_once('./core/connexion.php');
                 //2 - Ecriture de la requête
-                $sql = 'SELECT * FROM formation_modal';
+                $sql = 'SELECT * FROM portefolio_gallery';
                 //3 - Execution de la requête
                 $req = mysqli_query($connexion, $sql) or die(mysqli_error($connexion));
                 //4 - Traitement des données 
@@ -100,13 +98,11 @@ include("./inc/session.inc.php");
                 ?>
                 <tr>
                     <th scope="row"><?php echo $bloc['id'];?></th>
-                    <td><?php echo $bloc['titre_modal'];?></td>
-                    <td><?php echo $bloc['texte_modal'];?></td>
-                    <td><?php echo $bloc['icone_modal'];?></td>
+                    <td><?php echo $bloc['photo'];?></td>
                     <td>
                         <div class="d-flex">
-                            <a href="../admin/core/delete-formation-modal.php?id=<?php echo $bloc['id'];?>" class="btn btn-danger mr-2" onclick="return confirm ('Vraiment ?')"><i class="fa fa-trash"></i></a>
-                            <a href="edit-formation-modal.php?id=<?php echo $bloc['id'];?>" class="btn btn-info"><i class="fa fa-edit"></i></a>
+                            <a href="../admin/core/delete-portefolio-gallery.php?id=<?php echo $bloc['id'];?>" class="btn btn-danger mr-2" onclick="return confirm ('Vraiment ?')"><i class="fa fa-trash"></i></a>
+                            <a href="edit-portefolio-gallery.php?id=<?php echo $bloc['id'];?>" class="btn btn-info"><i class="fa fa-edit"></i></a>
                         </div>
                         
                     </td>

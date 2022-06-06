@@ -30,7 +30,7 @@
                     <a class="nav-link" href="index-features.php">Features</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="index-portfolio.php">Portfolio</a>
+                    <a class="nav-link" href="index-portefolio.php">Portfolio</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Partners</a>
