@@ -1,8 +1,11 @@
 body {
-    font-family: "roboto", sans-serif, "navystudio";
+    font-family: "Open Sans", "roboto", sans-serif, "navystudio";
+}
+h1,h2,h3,h4,h5,h6 {
+  font-family: "Raleway", sans-serif;
 }
 .text-about{
-    display: flex;
+    /*display: flex;*/
 }
 .text-cv {
     width: 100px;
@@ -20,13 +23,68 @@ body {
     margin: 26px auto 52px auto;
     width: 60px;
     border-top: 3px solid rgba(212, 212, 212, 1);
+    margin-bottom: 40px;
+}
+.title p {
+  margin-bottom: 40px;
 }
 .bg-about {
     background: #efeff1;
     border: 1px solid#e6e6ea;
     text-align: center;
     width: 100%;
+    margin-top: 40px;
+    padding-top: 35px;
   }
+.bg-about h4 {
+    font-size: 1.25rem;
+    margin-bottom: 24px;
+  }
+.bg-about p {
+    font-size: 0.875rem;
+    color: #848484;
+    font-weight: 300;
+    margin: 0 20px;
+    padding-bottom: 30px;
+}
+.bg-about span {
+  font-size: 40px;
+  color: #fcbe03;
+}
+.photo {
+  width: 23.75rem;
+  border: solid white 1px;
+}
+.navy-contact {
+  margin-left: 20px;
+}
+.navy-contact p, h4 {
+  text-align: center;
+}
+.navy-span {
+  text-align: center;
+  font-size: 55px;
+  margin-top: 40px;
+  color: #fcbe03;
+}
+.form-control {
+  width: 90%;
+}
+.navy-form {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.footer-bg {
+  background-color: black;
+}
+.footer-social {
+  font-size: 20px;
+  color: white;
+  margin-left: 40px;
+}
+img {
+  object-fit: cover;
+}
 /* ANIMATION */
 .navbar-nav {
     font-family: 'Raleway', Arial, sans-serif;
